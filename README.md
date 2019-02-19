@@ -19,7 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://github.com/akarshkumar0101/Flixster/blob/master/Flixster%20Part%202%20Recording.gif?raw=true" width=250><br>
 
 ### Notes
-Had to learn to use TMDB API to find the correct movies. Had to learn constraints in order to craft the app for all devices. Had to show ratings bar.
+Learned to use TMDB API to find the correct movies and learned constraints in order to craft the app for all devices. Found way to show ratings bar.
 
 ---
 
