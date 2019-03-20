@@ -23,8 +23,11 @@ class MovieDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
+        //posterImageView.isUserInteractionEnabled = true
         
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["overview"] as? String
@@ -50,7 +53,20 @@ class MovieDetailsViewController: UIViewController {
         
     }
     
-
+    @IBAction func didTapPoster(_ sender: UITapGestureRecognizer) {
+        //showTrailer
+        //
+        performSegue(withIdentifier: "showTrailer", sender: posterImageView)
+        
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let trailerViewController = segue.destination as! TrailerViewController
+        
+        trailerViewController.movie = movie
+        
+    }
+    
     /*
     // MARK: - Navigation
 
